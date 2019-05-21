@@ -38,6 +38,7 @@ def upload_file():
             return redirect(request.url)
         if file and allowed_file(file.filename):
             filename = secure_filename(file.filename)
+            filename = "uploadedfile.png"
             file.save(os.path.join(app.config['UPLOAD_FOLDER'], filename))
             #test & results
             filename = "./models/face_model"

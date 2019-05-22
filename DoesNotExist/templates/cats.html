@@ -29,9 +29,10 @@
   <nav class="navbar navbar-light bg-light static-top">
     <div class="container">
       <a class="navbar-brand" href="/">The Uncanny Valley - Final Project - REK</a>
-      <!--  Sign in: -->
+      
+      <!--  Sign in: 
       <a class="btn btn-primary" href="/cats">Test Your Cat Photos</a> 
-
+        -->
     </div>
   </nav>
 
@@ -49,24 +50,23 @@
             <div class="form-row">
 
                 <!-- <input type="email" class="form-control form-control-lg" placeholder="Select the photo..."> This is the OG code-->
-               <!-- <h3>Select a photo to learn if the face is real or fake.</h3> <br>-->
+                <h3>Select a photo to learn if the cat is real or AI generated.</h3> <br>
                 
-                <!--
-                <form method=post enctype="multipart/form-data">
-                  <input type=file name=file>
-                  <input type=submit value=Upload>
-                </form>
-                -->  
                 
+                <form method="post" enctype="multipart/form-data">
+                  <input type="file" accept="image/png" name="file">
+                  <input type="submit" value="Upload">
+                </form>  
+               
               </div>
               <br>
                 <!--prediction-->
-                <h2>You're FAKE! Sorry, so sad.</h2>
+                <h2></h2>
                 <br>
-                <a href="/"><h3>Try another one</h></a>
+                <p></p>
 
               <div class="col-12 col-md-3">
-                <!--<button type="submit" class="btn btn-block btn-lg btn-primary">Sign up!</button> -->
+                <!--<button type="submit" class="btn btn-block btn-lg btn-primary">Try Again</button> -->
                
            
             </div>
@@ -134,7 +134,7 @@
         <div class="col-lg-6 my-auto showcase-text">
           <h2>Limitations</h2>
           <p class="lead mb-0">Our model does a pretty good job of recognizing AI-generated faces, but because we did not give it any other types of fake faces to analyze, it is unable to recognize other fake faces such as statues, cartoons, or human-like robots.  The program will often misread these as real.</p>
-          </div>
+        </div>
       </div>
       <div class="row no-gutters">
         <div class="col-lg-6 order-lg-2 text-white showcase-img" style="background-image: url('../static/img/bg-showcase-3.jpg');"></div>
